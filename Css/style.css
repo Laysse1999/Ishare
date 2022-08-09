@@ -1,29 +1,36 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-:root{
-    background-color: rgba(0, 0, 0, 0.479);
-    color: rgb(51, 51, 51);
-}
 *{
     font-family: "Bitter";
     margin: 0;
     padding: 0;
     box-sizing:border-box;
 }
+
+
+:root{
+    --primary: rgba(161, 46, 46, 0.842);
+    --secundary:grey;
+    --text-color:white;
+    --text-secundary:black;
+    --text-tertiari:rgb(82, 63, 63);
+}
+
 /*Event form */
 
 #event-description{
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.596)),url(../imagens/Capa1.png);
     background-position: center;
     background-size: cover;
-    height: 85vh;
+    height: 89vh;
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    color: white;
+    color: var(--text-color);
 }
 
 #disclaimer h2,
 #disclaimer .event-date{
-    color: grey;
+    color: var(--primary);
 }
 
 #disclaimer h2{
@@ -40,7 +47,7 @@
 }
 
 #disclaimer p{
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-bottom: .3em;
 }
 
@@ -49,9 +56,53 @@
 }
 
 #subscription-form {
-    font-size: 1em;
-    background-color: grey;
+    background-color: var(--secundary);
+    padding: 2em;
+    max-width: 22%;
+    border-radius: 5px;
+
+}
+
+#subscription-form p {
+    font-size: 1.5em;
+    color:var(--text-secundary);
     margin-bottom: 1em;
 
+}
+.form-group{
+    display: flex;
+    flex-direction: column ;
+    margin-bottom: 0.8em;
+}
+
+.form-group label{
+    color: var(--text-tertiari);
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.form-group input,.form-group select{
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn{
+    background: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 1em;
+
+}
+
+.btn:hover{
+    opacity: 0.8;
+    background:rgba(212, 91, 91, 0.959) ;
 }
 
