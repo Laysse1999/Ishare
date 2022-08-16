@@ -220,6 +220,9 @@ body{
 
  .details img{
     width: 50%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.781);
+    margin-left: 5px;
  }
 
  .details h3{
@@ -249,12 +252,15 @@ body{
  }
  
  .details-description ul{
-    list-style-position: inside;
+    
+
  }
 
  .details-description ul li{
-    margin-bottom: 0.4;
+    margin: 10px;
+    padding: 10px;
  }
+
 
  .details-description ul li:last-child{
     font-weight: bold;
